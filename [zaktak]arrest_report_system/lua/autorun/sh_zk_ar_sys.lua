@@ -116,7 +116,7 @@ end
 
 
 hook.Add( "PlayerSay", "ZK_AR_SYS_OnSay", function(ply, text)
-	local AllowedToArrestReport = { TEAM_SCENLISTED, TEAM_SCNCO, TEAM_SCCOM, TEAM_SCEXO, TEAM_SCCMDR, TEAM_SCSPEC01, TEAM_SCSPEC02, TEAM_GADMIRAL, TEAM_ADMIRAL, TEAM_VADMIRAL, TEAM_RADMIRAL, TEAM_RCOMMO }
+	local AllowedToArrestReport = { TEAM_CITIZEN, TEAM_POLICE } -- Configurate the Teams HERE!
 
     if ( string.find( string.lower(text), "/ar " ) ) then
 		if ( string.find( string.lower( engine.ActiveGamemode() ), "starwars" ) ) then
